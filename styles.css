@@ -1,0 +1,223 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, li, input,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.half-width {
+    flex: 1;
+    padding: 20px;
+}
+
+.half-width-users {
+    max-width: 600px;
+}
+
+form {
+    max-width: 600px;
+    width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.ng-invalid.ng-touched {
+    border-color: #ff0000;
+}
+
+.success-message {
+    color: #008000;
+    font-weight: bold;
+}
+
+.data-user,
+.data-user-internal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.identification-user {
+    display: flex;
+    align-items: center;
+}
+
+.user-score {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #B8B8B8;
+    font-weight: bold;
+}
+
+.user-password-security-level {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #0B6623;
+    font-weight: bold;
+}
+
+
+.user-circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 16px 0 auto;
+}
+
+.user-circle svg {
+    width: 60%;
+    height: 60%;
+    fill: #fff;
+}
+
+.data-user {
+    padding: 20px;
+    background-color: rgba(184, 184, 184, 0.51);
+    border-radius: 20px;
+}
+
+.data-user-with-users {
+    border-radius: 20px 20px 0px 20px;
+}
+
+.data-user-internal {
+    padding: 20px;
+    background-color: rgba(184, 184, 184, 0.51);
+    border-radius: 0px 0px 0px 0px;
+}
+
+.data-user-internal-last {
+    padding: 20px;
+    background-color: rgba(184, 184, 184, 0.51);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.user-password-security-level-very-weak {
+    background-color: #D83F31;
+}
+
+.user-password-security-level-weak {
+    background-color: #EE9322;
+}
+
+.user-password-security-level-good {
+    background-color: #E9B824;
+}
+
+.user-password-security-level-strong {
+    background-color: #219C90;
+}
+
+.user-password-security-level-very-strong {
+    background-color: #0B6623;
+}
+
+.user-password-security-level-default {
+    background-color: #B3B3B3;
+}
+
+.item-user {
+    margin-bottom: 12px;
+}
